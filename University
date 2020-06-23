@@ -1,0 +1,43 @@
+package be.vdab.dag7;
+// liang p398
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Student {
+    private ArrayList courses;
+
+        public Student (ArrayList courses){
+            this.courses = courses;
+        }
+
+        public void addCourse( Course c) {
+            courses.add(c);
+        }
+        
+        public ArrayList getCourses(){
+            return courses;
+    }
+    
+        public void setCourses(ArrayList courses){
+            this.courses = courses;
+        }
+}
+
+// --- 
+
+public class Course {
+}
+
+//verder aanvullen
+
+
+// ---
+
+public class Faculty {
+}
+
+// verder aanvullen
+
+
+// ---
