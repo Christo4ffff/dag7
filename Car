@@ -1,0 +1,33 @@
+public class Car {
+    public String color; //yellow, red
+
+    public void accelerate() {
+        System.out.println("vroemvroem");
+    }
+
+    public void slowDown();{
+        System.out.println("ieeeeet");
+    }
+}
+
+
+//---
+
+public class Jeep extends Car {
+
+private double batterylevel;
+private String rolingCage;
+
+public void charge() {
+    System.out.println("bzzzz");
+    batterylevel += 0.1;
+    
+//---
+    
+public class CarApp {
+    public static void main(String[] args) {
+        Jeep jeepke = new Jeep();
+        jeepke.accelerate();
+    }
+}    
+    
