@@ -1,0 +1,33 @@
+
+public class HigherLowerApp {
+    public static void main(String[] args) {
+
+    HigherLowerGame higherLowerGame = new HigherLowerGame(10);
+        System.out.println(higherLowerGame);
+    }
+}
+
+
+// ---
+
+import java.util.Random;
+
+public class HigherLowerGame {
+    private int value;
+    private int max;
+    private Random random;
+
+    public HigherLowerGame(int max) {
+        this.max = max;
+        random = new Random();
+        reset();
+    }
+
+    public void reset() {
+        value = random.nextInt(max + 1);
+    }
+
+    public int guess(int guessValue) {
+        return Integer.compare(guessValue, value);
+    }
+}
